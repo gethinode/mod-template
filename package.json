@@ -16,7 +16,7 @@
     "build": "hugo --gc --minify -s exampleSite",
     "clean": "rimraf exampleSite/public exampleSite/resources",
     "mod:tidy": "hugo mod tidy -s exampleSite",
-    "mod:update": "npm run -s mod:tidy && hugo mod get -u -s exampleSite",
+    "mod:update": "npm run -s mod:tidy && hugo mod get -u ./...",
     "postinstall": "echo TODO: add postinstall instructions",
     "test": "npm run -s build"
   },
