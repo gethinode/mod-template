@@ -17,9 +17,9 @@
     "prebuild": "npm run clean && npm run mod:vendor",
     "build": "hugo --gc --minify -s exampleSite",
     "clean": "rimraf exampleSite/public exampleSite/resources",
-    "mod:tidy": "hugo mod tidy && hugo mod tidy -s exampleSite",
     "mod:update": "hugo mod get -u ./... && npm run -s mod:vendor && npm run -s mod:tidy",
     "mod:vendor": "rimraf _vendor && hugo mod vendor",
+    "mod:tidy": "hugo mod tidy && hugo mod tidy -s exampleSite",
     "postinstall": "echo TODO: add postinstall instructions",
     "test": "npm run -s build"
   },
