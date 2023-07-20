@@ -1,6 +1,7 @@
 name: Update Hugo Dependencies
 on:
   workflow_dispatch:
+# TODO: uncomment
 #   schedule:
 #     - cron: '0 3 * * *' # run daily at 03:00 AM
 
