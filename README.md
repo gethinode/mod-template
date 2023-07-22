@@ -2,7 +2,7 @@
 
 <!-- Tagline -->
 <p align="center">
-    <b>A template to define a Hugo module compatible with Hinode (work in progress)</b>
+    <b>A template to define a Hugo module compatible with Hinode</b>
     <br />
 </p>
 
