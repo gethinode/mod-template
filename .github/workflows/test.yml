@@ -20,11 +20,18 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: npm run test
+        cache-dependency-path: '**/package-lock.json'
+
+    - name: Perform clean install of npm
+      run: npm ci
+
+    - name: Run tests
+      run: npm run test
