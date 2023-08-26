@@ -5,6 +5,7 @@ on:
     - cron: '0 3 * * *' # run daily at 03:00 AM
 
 permissions:
+  contents: write
   pull-requests: write
 
 jobs:
@@ -53,6 +54,8 @@ jobs:
 
           [1]: https://github.com/peter-evans/create-pull-request
         labels: dependencies
+        # Note: remove **/go.mod and **/go.sum if your repository does not have an exampleSite
+        # or any other subfolder that uses Hugo modules
         add-paths: |
           go.mod
           go.sum
