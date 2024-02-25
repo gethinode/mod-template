@@ -3,7 +3,8 @@ languageCode = 'en-us'
 title = 'Test site for mod-template'
 
 [module]
-  replacements = 'github.com/gethinode/mod-template -> ../..'
+  # Build and serve using local mod-template clone declared in the named Hugo workspace:
+  workspace = "mod-template.work"
   [[module.imports]]
     path = "github.com/gethinode/mod-template"
   [[module.imports.mounts]]
