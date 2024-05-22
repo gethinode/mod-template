@@ -12,3 +12,4 @@ updates:
     commit-message:
       prefix: fix
       include: scope
+    versioning-strategy: increase
