@@ -34,9 +34,23 @@
 
 Hinode is a clean blog theme for [Hugo][hugo], an open-source static site generator. Hinode is available as a [template][repository_template], and a [main theme][repository]. <!-- This repository maintains a Hugo module to add [module][module] to a Hinode site. --> Visit the Hinode documentation site for [installation instructions][hinode_docs].
 
+## Contributing
+
+This module uses [semantic-release][semantic-release] to automate the release of new versions. The package uses `husky` and `commitlint` to ensure commit messages adhere to the [Conventional Commits][conventionalcommits] specification. You can run `npx git-cz` from the terminal to help prepare the commit message.
+
+## Configuration
+
+This module supports the following parameters (see the section `params.modules` in `config.toml`):
+
+| Setting                   | Default | Description |
+|---------------------------|---------|-------------|
+
 <!-- MARKDOWN LINKS -->
 [hugo]: https://gohugo.io
 [hinode_docs]: https://gethinode.com
 <!-- [module]: https://example.com -->
 [repository]: https://github.com/gethinode/hinode.git
 [repository_template]: https://github.com/gethinode/template.git
+[conventionalcommits]: https://www.conventionalcommits.org
+[husky]: https://typicode.github.io/husky/
+[semantic-release]: https://semantic-release.gitbook.io/
