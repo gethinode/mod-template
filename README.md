@@ -38,12 +38,12 @@ Hinode is a clean blog theme for [Hugo][hugo], an open-source static site genera
 
 This module uses [semantic-release][semantic-release] to automate the release of new versions. The package uses `husky` and `commitlint` to ensure commit messages adhere to the [Conventional Commits][conventionalcommits] specification. You can run `npx git-cz` from the terminal to help prepare the commit message.
 
-## Configuration
+<!-- ## Configuration
 
 This module supports the following parameters (see the section `params.modules` in `config.toml`):
 
 | Setting                   | Default | Description |
-|---------------------------|---------|-------------|
+|---------------------------|---------|-------------| -->
 
 <!-- MARKDOWN LINKS -->
 [hugo]: https://gohugo.io
