@@ -1,5 +1,5 @@
 # Source: https://nicolasiensen.github.io/2022-07-23-automating-dependency-updates-with-dependabot-github-auto-merge-and-github-actions/
-name: Dependabot auto-merge
+name: PR auto-merge
 on: pull_request_target
 
 permissions:
@@ -35,6 +35,16 @@ jobs:
         run: |
           gh pr comment $PR_URL --body "I'm **not approving** this PR because **it includes a major update of a dependency**"
           gh pr edit $PR_URL --add-label "requires-manual-qa"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+  review-mod-update-pr:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.pull_request.title == 'Update Hugo module dependencies' }}
+    steps:
+      - name: Enable auto-merge for mod-update PRs
+        run: gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
