@@ -2,4 +2,4 @@ module github.com/gethinode/mod-template/exampleSite
 
 go 1.19
 
-require github.com/gethinode/mod-template v0.0.0-20250330031708-ea0d9cf31195 // indirect
+require github.com/gethinode/mod-template v0.0.0-20250331031724-a7fd9149d0d1 // indirect
