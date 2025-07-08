@@ -1,6 +1,6 @@
 {
   "name": "@gethinode/mod-template",
-  "version": "0.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "A template to define a Hugo module compatible with Hinode",
   "keywords": [
     "hugo",
@@ -58,7 +58,6 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/github",
-      "@semantic-release/npm",
       [
         "@semantic-release/exec",
         {
