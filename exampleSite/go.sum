@@ -800,3 +800,5 @@ github.com/gethinode/mod-template v0.0.0-20251228033201-444572064a66 h1:iCuH1fee
 github.com/gethinode/mod-template v0.0.0-20251228033201-444572064a66/go.mod h1:6ofWqxiQMhTnI8U6mT3FrEUN1UZ0vcUcZyXVIny2CZs=
 github.com/gethinode/mod-template v0.0.0-20251229033234-866755f2d90d h1:p40/NUpnOTC2WL2kHBOtj0UphE0FUvDcpYxshNKzaFs=
 github.com/gethinode/mod-template v0.0.0-20251229033234-866755f2d90d/go.mod h1:6ofWqxiQMhTnI8U6mT3FrEUN1UZ0vcUcZyXVIny2CZs=
+github.com/gethinode/mod-template v0.0.0-20251230033016-4a3abbb18cda h1:jsWQ5GKVKX3A/QFid4Yn6x3oTCuONqxFlMZKtp/U+oE=
+github.com/gethinode/mod-template v0.0.0-20251230033016-4a3abbb18cda/go.mod h1:6ofWqxiQMhTnI8U6mT3FrEUN1UZ0vcUcZyXVIny2CZs=
