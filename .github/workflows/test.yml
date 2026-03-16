@@ -35,6 +35,21 @@ jobs:
         cache: 'npm'
         cache-dependency-path: '**/package-lock.json'
 
+    - name: Install Dart Sass
+      env:
+        DART_SASS_VERSION: "1.97.3"
+      run: |
+        if [ "$RUNNER_OS" == "Linux" ]; then
+          curl -fsSL "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" \
+            | tar -xz -C "$HOME"
+          echo "$HOME/dart-sass" >> $GITHUB_PATH
+        elif [ "$RUNNER_OS" == "macOS" ]; then
+          brew install sass/sass/sass
+        elif [ "$RUNNER_OS" == "Windows" ]; then
+          choco install sass
+        fi
+      shell: bash
+
     - name: Perform clean install of npm
       run: npm ci
 
