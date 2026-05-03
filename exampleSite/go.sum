@@ -138,3 +138,5 @@ github.com/gethinode/mod-template v0.0.0-20260501034640-786628c18029 h1:0WtiST20
 github.com/gethinode/mod-template v0.0.0-20260501034640-786628c18029/go.mod h1:6ofWqxiQMhTnI8U6mT3FrEUN1UZ0vcUcZyXVIny2CZs=
 github.com/gethinode/mod-template v0.0.0-20260501042142-6e454c1febc7 h1:sv8TgXfo85P4FxW7NhD7MEp+ggcsbIidasvYQMHxceE=
 github.com/gethinode/mod-template v0.0.0-20260501042142-6e454c1febc7/go.mod h1:6ofWqxiQMhTnI8U6mT3FrEUN1UZ0vcUcZyXVIny2CZs=
+github.com/gethinode/mod-template v0.0.0-20260502040505-a0fa7a3dbb87 h1:LEX/iDkwqYndx1/3XBR2bm34TL5tJ4SVLFYXbLqfSzg=
+github.com/gethinode/mod-template v0.0.0-20260502040505-a0fa7a3dbb87/go.mod h1:6ofWqxiQMhTnI8U6mT3FrEUN1UZ0vcUcZyXVIny2CZs=
