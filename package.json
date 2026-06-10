@@ -45,7 +45,7 @@
     "hugo-extended": "^0.163.0",
     "husky": "^9.1.7",
     "rimraf": "^6.1.3",
-    "semantic-release": "^25.0.3"
+    "semantic-release": "^25.0.5"
   },
   "release": {
     "branches": "main",
