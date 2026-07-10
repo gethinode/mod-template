@@ -39,7 +39,7 @@ Hinode is a clean blog theme for [Hugo][hugo], an open-source static site genera
 This module uses [semantic-release][semantic-release] to automate the release of new versions. The package uses `husky` and `commitlint` to ensure commit messages adhere to the [Conventional Commits][conventionalcommits] specification.
 
 > [!NOTE]
-> The bundled workflows call gethinode's shared reusable CI (`gethinode/.github`) and expect the gethinode organization context — including organization secrets such as `SEMANTIC_RELEASE_GIT`, used by the release and module-update workflows. Modules created from this template are intended for the gethinode ecosystem. If you maintain a module **outside** the gethinode organization, replace the reusable-workflow callers under `.github/workflows/` with self-contained equivalents and supply your own release credentials.
+> The bundled workflows call gethinode's shared reusable CI (`gethinode/.github`) and expect the gethinode organization context — including organization secrets such as `SEMANTIC_RELEASE_GIT`, used by the release and module-update workflows. Modules created from this template are intended for the gethinode ecosystem and use **pnpm** internally (via the `packageManager` field and `pnpm-workspace.yaml`). If you maintain a module **outside** the gethinode organization, replace the reusable-workflow callers under `.github/workflows/` with self-contained equivalents and supply your own release credentials — and, if you prefer **npm**, swap the `pnpm` commands in `package.json` and the workflows for their npm equivalents.
 
 <!-- ## Configuration
 
