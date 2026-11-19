@@ -20,10 +20,10 @@ importers:
         version: 21.2.4
       '@semantic-release/exec':
         specifier: ^7.1.0
-        version: 7.1.0(semantic-release@26.0.0)
+        version: 7.1.0(semantic-release@26.0.1)
       '@semantic-release/git':
         specifier: ^11.0.1
-        version: 11.0.1(semantic-release@26.0.0)
+        version: 11.0.1(semantic-release@26.0.1)
       cpy-cli:
         specifier: ^7.0.0
         version: 7.0.0
@@ -37,8 +37,8 @@ importers:
         specifier: ^6.1.4
         version: 6.1.4
       semantic-release:
-        specifier: ^26.0.0
-        version: 26.0.0
+        specifier: ^26.0.1
+        version: 26.0.1
 
 packages:
 
@@ -372,6 +372,10 @@ packages:
 
   argue-cli@3.2.0:
     resolution: {integrity: sha512-VipTB0gXgGIFO2Rg9yEVN5wLt2AurJcZqDbgmYSwPwsykhLrQhs240/bfceev4w68lI8JshoOJIk9uW7tFzROw==}
+    engines: {node: '>=22'}
+
+  argue-cli@3.2.1:
+    resolution: {integrity: sha512-h8QG03KSAympQnbZe0k5h/mnQCCkoKO9rVQ0L+F99+NNTV4vm18Lq70WwIKE0aLN3mM1EUf42l960bl6Dd0jOw==}
     engines: {node: '>=22'}
 
   argv-formatter@1.0.0:
@@ -1285,8 +1289,8 @@ packages:
   safe-buffer@5.1.2:
     resolution: {integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==}
 
-  semantic-release@26.0.0:
-    resolution: {integrity: sha512-yfmeYZaPiWJRY/axOilZBAbBSYwpuikFjSI1IbB0rcSSooXqFdme8e2TVpLIyT+GIsef8LJ7z5wqjpDZFuxyFg==}
+  semantic-release@26.0.1:
+    resolution: {integrity: sha512-nVDjgiPeiYuHtq4sjiJJVnq9i7zyXMFNGFL8MU0GWQLE0EPq98fTogh5RzHPvqxltnezmQ8QfiYZ100DFXyPQw==}
     engines: {node: '>=26.13'}
     hasBin: true
 
@@ -1839,7 +1843,7 @@ snapshots:
 
   '@sec-ant/readable-stream@0.4.1': {}
 
-  '@semantic-release/commit-analyzer@14.0.0-beta.4(semantic-release@26.0.0)':
+  '@semantic-release/commit-analyzer@14.0.0-beta.4(semantic-release@26.0.1)':
     dependencies:
       conventional-changelog-angular: 9.4.0
       conventional-changelog-conventionalcommits: 10.4.1
@@ -1849,13 +1853,13 @@ snapshots:
       import-from-esm: 2.0.0
       lodash-es: 4.18.1
       micromatch: 4.0.8
-      semantic-release: 26.0.0
+      semantic-release: 26.0.1
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/core@1.0.0-beta.13(semantic-release@26.0.0)':
+  '@semantic-release/core@1.0.0-beta.13(semantic-release@26.0.1)':
     dependencies:
-      '@semantic-release/commit-analyzer': 14.0.0-beta.4(semantic-release@26.0.0)
+      '@semantic-release/commit-analyzer': 14.0.0-beta.4(semantic-release@26.0.1)
       '@semantic-release/error': 4.0.0
       aggregate-error: 5.1.0
       cosmiconfig: 10.0.1
@@ -1882,7 +1886,7 @@ snapshots:
 
   '@semantic-release/error@4.0.0': {}
 
-  '@semantic-release/exec@7.1.0(semantic-release@26.0.0)':
+  '@semantic-release/exec@7.1.0(semantic-release@26.0.1)':
     dependencies:
       '@semantic-release/error': 4.0.0
       aggregate-error: 3.1.0
@@ -1890,11 +1894,11 @@ snapshots:
       execa: 9.6.0
       lodash-es: 4.18.1
       parse-json: 8.3.0
-      semantic-release: 26.0.0
+      semantic-release: 26.0.1
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/git@11.0.1(semantic-release@26.0.0)':
+  '@semantic-release/git@11.0.1(semantic-release@26.0.1)':
     dependencies:
       '@semantic-release/error': 4.0.0
       aggregate-error: 5.0.0
@@ -1904,11 +1908,11 @@ snapshots:
       lodash-es: 4.18.1
       micromatch: 4.0.8
       p-reduce: 3.0.0
-      semantic-release: 26.0.0
+      semantic-release: 26.0.1
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/github@12.0.11(semantic-release@26.0.0)':
+  '@semantic-release/github@12.0.11(semantic-release@26.0.1)':
     dependencies:
       '@octokit/core': 7.0.8
       '@octokit/plugin-paginate-rest': 15.0.0(@octokit/core@7.0.8)
@@ -1924,7 +1928,7 @@ snapshots:
       lodash-es: 4.18.1
       mime: 4.1.2
       p-filter: 4.1.0
-      semantic-release: 26.0.0
+      semantic-release: 26.0.1
       tinyglobby: 0.2.17
       undici: 7.30.2
       url-join: 5.2.0
@@ -1932,7 +1936,7 @@ snapshots:
       - kerberos
       - supports-color
 
-  '@semantic-release/npm@14.0.0-beta.2(semantic-release@26.0.0)':
+  '@semantic-release/npm@14.0.0-beta.2(semantic-release@26.0.1)':
     dependencies:
       '@actions/core': 3.0.1
       '@semantic-release/error': 4.0.0
@@ -1947,11 +1951,11 @@ snapshots:
       rc: 1.2.8
       read-pkg: 10.1.0
       registry-auth-token: 5.1.1
-      semantic-release: 26.0.0
+      semantic-release: 26.0.1
       semver: 7.8.6
       tempy: 3.2.0
 
-  '@semantic-release/release-notes-generator@15.0.0-beta.3(semantic-release@26.0.0)':
+  '@semantic-release/release-notes-generator@15.0.0-beta.3(semantic-release@26.0.1)':
     dependencies:
       conventional-changelog-angular: 9.4.0
       conventional-changelog-conventionalcommits: 10.4.1
@@ -1962,7 +1966,7 @@ snapshots:
       import-from-esm: 2.0.0
       lodash-es: 4.18.1
       read-package-up: 11.0.0
-      semantic-release: 26.0.0
+      semantic-release: 26.0.1
     transitivePeerDependencies:
       - supports-color
 
@@ -2029,6 +2033,8 @@ snapshots:
   argparse@3.0.4: {}
 
   argue-cli@3.2.0: {}
+
+  argue-cli@3.2.1: {}
 
   argv-formatter@1.0.0: {}
 
@@ -2129,7 +2135,7 @@ snapshots:
     dependencies:
       '@conventional-changelog/template': 1.4.1
       '@simple-libs/stream-utils': 2.0.0
-      argue-cli: 3.2.0
+      argue-cli: 3.2.1
       conventional-commits-filter: 6.0.1
       verkit: 0.5.0
 
@@ -2143,7 +2149,7 @@ snapshots:
   conventional-commits-parser@7.1.4:
     dependencies:
       '@simple-libs/stream-utils': 2.0.0
-      argue-cli: 3.2.0
+      argue-cli: 3.2.1
 
   convert-hrtime@5.0.0: {}
 
@@ -2847,15 +2853,15 @@ snapshots:
 
   safe-buffer@5.1.2: {}
 
-  semantic-release@26.0.0:
+  semantic-release@26.0.1:
     dependencies:
-      '@semantic-release/commit-analyzer': 14.0.0-beta.4(semantic-release@26.0.0)
-      '@semantic-release/core': 1.0.0-beta.13(semantic-release@26.0.0)
-      '@semantic-release/github': 12.0.11(semantic-release@26.0.0)
-      '@semantic-release/npm': 14.0.0-beta.2(semantic-release@26.0.0)
-      '@semantic-release/release-notes-generator': 15.0.0-beta.3(semantic-release@26.0.0)
+      '@semantic-release/commit-analyzer': 14.0.0-beta.4(semantic-release@26.0.1)
+      '@semantic-release/core': 1.0.0-beta.13(semantic-release@26.0.1)
+      '@semantic-release/github': 12.0.11(semantic-release@26.0.1)
+      '@semantic-release/npm': 14.0.0-beta.2(semantic-release@26.0.1)
+      '@semantic-release/release-notes-generator': 15.0.0-beta.3(semantic-release@26.0.1)
       debug: 4.4.3
-      execa: 9.6.1
+      execa: 10.2.1
       find-versions: 6.0.0
       lodash-es: 4.18.1
       marked: 15.0.12
