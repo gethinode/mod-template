@@ -17,3 +17,7 @@ overrides:
   # fast-uri: fixes Ajv URI scheme, host, and reference validation (GHSA-w74x-v6f9-j3xg,
   # GHSA-xhq7-xmqj-769h, GHSA-wjr9-j795-jxcr, GHSA-333x-w4r6-6crp).
   fast-uri@3: "^3.1.9"
+
+# Select standard Hugo archives from 0.170.0 and Extended archives for older Hugo.
+patchedDependencies:
+  hugo-extended@0.170.0: patches/hugo-extended@0.170.0.patch
